@@ -144,7 +144,6 @@ public class Tree<E extends Comparable<E>> {
             t.add(i);
         }
 
-        //     Visualizer.treeVisualize(t); // fixme
 
         t.printPreorder();
     }

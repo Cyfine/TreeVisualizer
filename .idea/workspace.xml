@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Add ReadMe">
+      <change afterPath="$PROJECT_DIR$/Sample.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Data_Structure_and_Algorithm\Tree" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Tree">
     <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tree" />
@@ -67,15 +73,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,12 +115,36 @@
       <workItem from="1615185671045" duration="609000" />
       <workItem from="1615203893452" duration="226000" />
       <workItem from="1615210555559" duration="1139000" />
-      <workItem from="1615604978907" duration="3313000" />
+      <workItem from="1615604978907" duration="3727000" />
+      <workItem from="1615614324148" duration="676000" />
     </task>
+    <task id="LOCAL-00001" summary="Add ReadMe">
+      <created>1615608650336</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615608650336</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add ReadMe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

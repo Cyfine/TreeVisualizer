@@ -39,7 +39,8 @@ Tree t = new Tree();
 Visualizer.treeVisualize(t); 
 ```
 
-
+### Sample Visualized Tree
+![Screenshot](Sample.png)
 
 ## Built With
 
