@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Heap {
     int[] keys;
 
@@ -26,27 +28,22 @@ public class Heap {
         System.out.println(heap.insert(75));
         System.out.println(heap.insert(76));
 
+
+
         int size = heap.keys[0];
 //        for (int i = 0; i < size; i++) {
 //            System.out.println(heap.deleteMin());
 //        }
-        Visualizer.heapVisualize(heap.keys);
+        int[] sampleArray = {8, 5, 9, 2, 6, 7, 4, 1, 0};
+
+        Heap test = buildHeap(sampleArray);
+        Visualizer.heapVisualize(test.keys);
 
 
         System.out.println(depth(8));
 
     }
 
-    /*
-     *             1
-     *           2   3
-     *          4 5 6 7
-     *
-     *
-     *
-     *
-     *
-     * */
 
     /**
      * @param key the key value insert into the heap
@@ -85,10 +82,17 @@ public class Heap {
      */
     public void percolateDown(int idx) {
         int childIdx = 2 * idx;
-        if (childIdx > keys[0]) {
-            return;
+        boolean dualChild = true;
+        if (childIdx +1 > keys[0]) {
+            if (childIdx > keys[0]) {
+                return;
+            }else{
+                dualChild = false ;
+            }
+
         }
-        if (keys[childIdx] > keys[childIdx + 1]) {
+
+        if ( dualChild && keys[childIdx] > keys[childIdx + 1]) {
             childIdx = childIdx + 1;
         }
         if (keys[childIdx] < keys[idx]) {
@@ -136,6 +140,12 @@ public class Heap {
 
         data[data.length - 1] = data[0];
         data[0] = data.length - 1;
+
+        heap.keys = data;
+
+        for (int i = data[0] / 2; i > 0; i--) {
+            heap.percolateDown(i);
+        }
 
 
         return heap;
