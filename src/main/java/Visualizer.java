@@ -77,7 +77,9 @@ public class Visualizer extends PApplet {
     public void setup() {
         size(width, height);
         frameRate(60);
+
     }
+
 
     public void draw() {
 

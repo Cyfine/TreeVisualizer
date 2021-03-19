@@ -34,7 +34,11 @@ public class Heap {
 //        for (int i = 0; i < size; i++) {
 //            System.out.println(heap.deleteMin());
 //        }
+
+
+
         int[] sampleArray = {8, 5, 9, 2, 6, 7, 4, 1, 0};
+        int [] sampleArray2 = {5,6,9,4,3,50,54,12,76,90,22,90,67};
 
         Heap test = buildHeap(sampleArray);
         Visualizer.heapVisualize(test.keys);
