@@ -81,7 +81,7 @@ public class Heap {
     }
 
     /**
-     * @param idx the index of elment in the array that will be adjusted
+     * @param idx the index of element in the array that will be adjusted
      */
     public void percolateDown(int idx) {
         int childIdx = 2 * idx;

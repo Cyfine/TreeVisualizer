@@ -12,7 +12,7 @@ public class Visualizer extends PApplet {
     boolean visualizeHeap = false;
 
     //========static fields========
-    static Tree tree ;
+    static Tree tree;
     static int[] heapArray;
     static int[] arrayBuffer; //used to check changes of heap and synchronize
 
@@ -27,26 +27,26 @@ public class Visualizer extends PApplet {
     }
 
     // Heap support layer, real-time parse the heap array to Node based Tree, then visualize the Tree
-    public static void heapVisualize(int[] array){
+    public static void heapVisualize(int[] array) {
         Visualizer v = new Visualizer();
 
         v.tree = parseHeapArrayToTree(array);
         v.visualizeHeap = true;
         arrayBuffer = new int[array.length];
-        heapArray = array ;
+        heapArray = array;
         System.arraycopy(array, 0, arrayBuffer, 0, array.length);
         String[] appletArgs = new String[]{"Visualizer"};
         v.main(appletArgs);
     }
 
-    public static void heapSynchronize(){
-       for(int i = 0; i < heapArray.length; i++){
-           if(heapArray[i] != arrayBuffer[i]){
-               tree = parseHeapArrayToTree(heapArray);
-               System.arraycopy(heapArray, 0, arrayBuffer, 0, heapArray.length);
+    public static void heapSynchronize() {
+        for (int i = 0; i < heapArray.length; i++) {
+            if (heapArray[i] != arrayBuffer[i]) {
+                tree = parseHeapArrayToTree(heapArray);
+                System.arraycopy(heapArray, 0, arrayBuffer, 0, heapArray.length);
 
-           }
-       }
+            }
+        }
     }
 
     private static Tree parseHeapArrayToTree(int[] array) {
@@ -59,14 +59,15 @@ public class Visualizer extends PApplet {
 
         for (int i = 1; i * 2 < nodes.length; i++) {
             nodes[i].left = nodes[i * 2];
-            nodes[i*2].parent = nodes[i];
+            nodes[i * 2].parent = nodes[i];
             if (i * 2 + 1 < nodes.length) {
                 nodes[i].right = nodes[i * 2 + 1];
-                nodes[i*2+1].parent = nodes[i];
+                nodes[i * 2 + 1].parent = nodes[i];
             }
         }
-        try{
-        t.root = nodes[1];}catch(RuntimeException e){
+        try {
+            t.root = nodes[1];
+        } catch (RuntimeException e) {
             System.out.println("Invalid Heap Array");
             t.root = t.nodeBuilder(0);
         }
@@ -84,7 +85,7 @@ public class Visualizer extends PApplet {
         keyReleased();
         background(255);
 
-        if(visualizeHeap){
+        if (visualizeHeap) {
             heapSynchronize();
         }
 
