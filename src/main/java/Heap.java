@@ -16,34 +16,20 @@ public class Heap {
 
     public static void main(String[] args) {
         Heap heap = new Heap(10);
-        System.out.println(heap.insert(5));
-        System.out.println(heap.insert(10));
-        System.out.println(heap.insert(2));
-        System.out.println(heap.insert(3));
-        System.out.println(heap.insert(4));
-        System.out.println(heap.insert(9));
-        System.out.println(heap.insert(78));
-        System.out.println(heap.insert(79));
-        System.out.println(heap.insert(74));
-        System.out.println(heap.insert(75));
-        System.out.println(heap.insert(76));
-
-
-
         int size = heap.keys[0];
-//        for (int i = 0; i < size; i++) {
-//            System.out.println(heap.deleteMin());
-//        }
-
 
 
         int[] sampleArray = {8, 5, 9, 2, 6, 7, 4, 1, 0};
-        int [] sampleArray2 = {5,6,9,4,3,50,54,12,76,90,22,90,67};
+        int[] sampleArray2 = {5, 6, 9, 4, 3, 50, 54, 12, 76, 90, 22, 90, 67};
+        int[] sampleArray3 = new int[1000];
+        Random rand = new Random();
 
-        Heap test = buildHeap(sampleArray);
+        for (int i = 0; i < 1000; i++) {
+            sampleArray3[i] = rand.nextInt(1000);
+        }
+
+        Heap test = buildHeap(sampleArray2);
         Visualizer.heapVisualize(test.keys);
-
-
         System.out.println(depth(8));
 
     }
@@ -87,16 +73,16 @@ public class Heap {
     public void percolateDown(int idx) {
         int childIdx = 2 * idx;
         boolean dualChild = true;
-        if (childIdx +1 > keys[0]) {
+        if (childIdx + 1 > keys[0]) {
             if (childIdx > keys[0]) {
                 return;
-            }else{
-                dualChild = false ;
+            } else {
+                dualChild = false;
             }
 
         }
 
-        if ( dualChild && keys[childIdx] > keys[childIdx + 1]) {
+        if (dualChild && keys[childIdx] > keys[childIdx + 1]) {
             childIdx = childIdx + 1;
         }
         if (keys[childIdx] < keys[idx]) {
@@ -137,7 +123,10 @@ public class Heap {
         return -1;
     }
 
-    // this method suppose the data array is not full
+    /*
+    * Build build heap algorithm,
+    *
+    * */
     public static Heap buildHeap(int[] data) {
         Heap heap = new Heap();
         int currentPos = data[0];

@@ -25,6 +25,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Maven: org.processing:core:3.3.7" level="project" />
+    <orderEntry type="library" name="Maven: org.processing:core:2.2.1" level="project" />
   </component>
 </module>
