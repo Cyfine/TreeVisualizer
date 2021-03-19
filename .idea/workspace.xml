@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Add ReadMe">
+    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Initially add support for the array implemented Heap">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Visualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,7 @@
       <workItem from="1615210555559" duration="1139000" />
       <workItem from="1615604978907" duration="3727000" />
       <workItem from="1615614324148" duration="676000" />
-      <workItem from="1616139045141" duration="1412000" />
+      <workItem from="1616139045141" duration="2927000" />
     </task>
     <task id="LOCAL-00001" summary="Add ReadMe">
       <created>1615608650336</created>
@@ -132,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1615608650336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initially add support for the array implemented Heap">
+      <created>1616140511976</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616140511976</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +158,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add ReadMe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe" />
+    <MESSAGE value="Initially add support for the array implemented Heap" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initially add support for the array implemented Heap" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

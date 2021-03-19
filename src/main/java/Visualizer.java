@@ -1,14 +1,24 @@
 import processing.core.PApplet;
 
+import java.lang.reflect.Array;
+
 public class Visualizer extends PApplet {
-    static Tree tree;
+    //=========applet Settings==========
     static int width = 800;
     static int height = 800;
     int x = width / 2;
     int y = height / 6;
     boolean drag;
+    boolean visualizeHeap = false;
 
+    //========static fields========
+    static Tree tree ;
+    static int[] heapArray;
+    static int[] arrayBuffer; //used to check changes of heap and synchronize
 
+    //=============================
+
+    //===========Applet boot, static field setting============
     public static void treeVisualize(Tree tree) {
         Visualizer v = new Visualizer();
         v.tree = tree;
@@ -18,8 +28,29 @@ public class Visualizer extends PApplet {
 
 
     public static void heapVisualize(int[] array){
+        Visualizer v = new Visualizer();
 
+        v.tree = parseHeapArrayToTree(array);
+        v.visualizeHeap = true;
+        arrayBuffer = new int[array.length];
+        heapArray = array ;
+        System.arraycopy(array, 0, arrayBuffer, 0, array.length);
+        String[] appletArgs = new String[]{"Visualizer"};
+        v.main(appletArgs);
     }
+
+    public static void heapSynchronize(){
+       for(int i = 0; i < heapArray.length; i++){
+           if(heapArray[i] != arrayBuffer[i]){
+               tree = parseHeapArrayToTree(heapArray);
+               System.arraycopy(heapArray, 0, arrayBuffer, 0, heapArray.length);
+
+           }
+       }
+    }
+
+
+
     private static Tree parseHeapArrayToTree(int[] array) {
         Tree<Integer> t = new Tree<Integer>();
         Tree.Node[] nodes = new Tree.Node[array[0] + 1];
@@ -53,6 +84,11 @@ public class Visualizer extends PApplet {
         keyPressed();
         keyReleased();
         background(255);
+
+        if(visualizeHeap){
+            heapSynchronize();
+        }
+
         drawTree(tree);
         fill(0, 255, 0);
 
