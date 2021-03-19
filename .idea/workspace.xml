@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Initially add support for the array implemented Heap">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Heap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Visualizer.java" afterDir="false" />
     </list>
@@ -60,8 +61,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Data_Structure_and_Algorithm\Tree" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Tree">
+  <component name="RunManager" selected="Application.Heap">
+    <configuration name="Heap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Heap" />
+      <module name="Tree" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tree" />
       <module name="Tree" />
@@ -91,6 +102,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Heap" />
         <item itemvalue="Application.Tree" />
         <item itemvalue="Application.Visualizer" />
       </list>
@@ -122,7 +134,7 @@
       <workItem from="1615210555559" duration="1139000" />
       <workItem from="1615604978907" duration="3727000" />
       <workItem from="1615614324148" duration="676000" />
-      <workItem from="1616139045141" duration="2927000" />
+      <workItem from="1616139045141" duration="3893000" />
     </task>
     <task id="LOCAL-00001" summary="Add ReadMe">
       <created>1615608650336</created>
@@ -138,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616140511976</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initially add support for the array implemented Heap">
+      <created>1616142018349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616142018349</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -26,7 +26,7 @@ public class Visualizer extends PApplet {
         v.main(appletArgs);
     }
 
-
+    // Heap support layer, real-time parse the heap array to Node based Tree, then visualize the Tree
     public static void heapVisualize(int[] array){
         Visualizer v = new Visualizer();
 
@@ -49,28 +49,27 @@ public class Visualizer extends PApplet {
        }
     }
 
-
-
     private static Tree parseHeapArrayToTree(int[] array) {
         Tree<Integer> t = new Tree<Integer>();
         Tree.Node[] nodes = new Tree.Node[array[0] + 1];
+
         for (int i = 1; i <= array[0]; i++) {
             nodes[i] = t.nodeBuilder(array[i]);
         }
 
-        for (int i = 0; i * 2 < nodes.length; i++) {
-
-
+        for (int i = 1; i * 2 < nodes.length; i++) {
             nodes[i].left = nodes[i * 2];
             nodes[i*2].parent = nodes[i];
             if (i * 2 + 1 < nodes.length) {
                 nodes[i].right = nodes[i * 2 + 1];
                 nodes[i*2+1].parent = nodes[i];
-
             }
-
         }
-        t.root = nodes[1]; //fixme
+        try{
+        t.root = nodes[1];}catch(RuntimeException e){
+            System.out.println("Invalid Heap Array");
+            t.root = t.nodeBuilder(0);
+        }
         return t;
     }
 
