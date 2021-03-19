@@ -6,7 +6,7 @@ public class Visualizer extends PApplet {
     static int height = 800;
     int x = width / 2;
     int y = height / 6;
-    boolean drag ;
+    boolean drag;
 
 
     public static void treeVisualize(Tree tree) {
@@ -16,6 +16,32 @@ public class Visualizer extends PApplet {
         v.main(appletArgs);
     }
 
+
+    public static void heapVisualize(int[] array){
+
+    }
+    private static Tree parseHeapArrayToTree(int[] array) {
+        Tree<Integer> t = new Tree<Integer>();
+        Tree.Node[] nodes = new Tree.Node[array[0] + 1];
+        for (int i = 1; i <= array[0]; i++) {
+            nodes[i] = t.nodeBuilder(array[i]);
+        }
+
+        for (int i = 0; i * 2 < nodes.length; i++) {
+
+
+            nodes[i].left = nodes[i * 2];
+            nodes[i*2].parent = nodes[i];
+            if (i * 2 + 1 < nodes.length) {
+                nodes[i].right = nodes[i * 2 + 1];
+                nodes[i*2+1].parent = nodes[i];
+
+            }
+
+        }
+        t.root = nodes[1]; //fixme
+        return t;
+    }
 
     public void setup() {
         size(width, height);
@@ -30,12 +56,12 @@ public class Visualizer extends PApplet {
         drawTree(tree);
         fill(0, 255, 0);
 
-        if (mousePressed && mouseListener(x, y,30)) {
+        if (mousePressed && mouseListener(x, y, 30)) {
             drag = true;
         }
-        if(drag){
-            x = mouseX ;
-            y = mouseY ;
+        if (drag) {
+            x = mouseX;
+            y = mouseY;
         }
         if (keyCode == UP && keyPressed) {
             y -= 10;
@@ -123,22 +149,22 @@ public class Visualizer extends PApplet {
         }
 
 
-        if(isRight){
+        if (isRight) {
             fill(200, colorL, colorR);
-        }else {
+        } else {
             fill(colorL, colorR, 200);
         }
 
-        if(mouseListener(x,y,20)){
-            showKey(n.key.toString(), ""+n.height);
-            fill(255,255,0);
+        if (mouseListener(x, y, 20)) {
+            showKey(n.key.toString(), "" + n.height);
+            fill(255, 255, 0);
 
         }
         ellipse(x, y, 20, 20);
         fill(0);
-        if( n.key.toString().length() <=3|| mouseListener(x,y,20)) {
+        if (n.key.toString().length() <= 3 || mouseListener(x, y, 20)) {
             text(n.key.toString(), x - 4, y + 5);
-        } else{
+        } else {
             text("...", x - 4, y + 5);
         }
 //        text(n.height + "-" + n.key.toString(), x, y);
@@ -174,19 +200,19 @@ public class Visualizer extends PApplet {
         return Math.max(rOffset, lOffset) + horizonInterval + getTreeRightOffset(l.left, horizonInterval);
     }
 
-    public boolean mouseListener(int x, int y, int detectSize){
-        return mouseX <  x+ detectSize/2   && mouseX >x-  detectSize/2  && mouseY < y+ detectSize/2 && mouseY > y - detectSize/2 ;
+    public boolean mouseListener(int x, int y, int detectSize) {
+        return mouseX < x + detectSize / 2 && mouseX > x - detectSize / 2 && mouseY < y + detectSize / 2 && mouseY > y - detectSize / 2;
     }
 
-    public  void showKey(String...str){
+    public void showKey(String... str) {
         fill(0);
-        text("Current key: " + str[0] , 10,20);
-        text("Node height: " + str[1] , 10,40);
-        text("Drag root or press direction keys to move the tree", 10,60);
+        text("Current key: " + str[0], 10, 20);
+        text("Node height: " + str[1], 10, 40);
+        text("Drag root or press direction keys to move the tree", 10, 60);
 
     }
 
-    public void mouseReleased(){
-        drag = false  ;
+    public void mouseReleased() {
+        drag = false;
     }
 }
