@@ -1,7 +1,8 @@
 # Tree Visualizer
-<img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/Cyfine/TreeVisualizer/src/main/java/Visualizer.java">
-<img alt="Dependencies" src="https://img.shields.io/badge/Dependencies-Processing-yellowgreen">
-<img alt="Build Tool" src="https://img.shields.io/badge/Build%20Tool-Maven-orange">
+
+![size](https://img.shields.io/github/size/Cyfine/TreeVisualizer/src/main/java/Visualizer.java)
+[![Build Tool](https://img.shields.io/badge/Build%20Tool-Maven-orange)](https://maven.apache.org/)
+[![Dependencies](https://img.shields.io/badge/Dependencies-Processing-lightgrey)](https://processing.org/)
 
 During the Data Structure and Algorithms course, the Tree that implemented is not visible, which cause difficulties in debugging. This project implement a visualizer to real-time visualize the tree, make it easy to debug and learn the Tree structure.
 

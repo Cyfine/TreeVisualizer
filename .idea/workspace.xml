@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Add ReadMe">
+    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Bug fixes and update Readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Visualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1615608650336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Bug fixes and update Readme.md">
+      <created>1616225387940</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616225387940</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Bug fixes and update Readme.md">
+      <created>1616225488480</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616225488480</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,7 +146,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add ReadMe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe" />
+    <MESSAGE value="Bug fixes and update Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes and update Readme.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
