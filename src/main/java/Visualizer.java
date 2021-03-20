@@ -9,13 +9,13 @@ public class Visualizer extends PApplet {
     int x = width / 2;
     int y = height / 6;
     boolean drag;
-    boolean visualizeHeap = false;
+
 
     //========static fields========
     static Tree tree;
     static int[] heapArray;
     static int[] arrayBuffer; //used to check changes of heap and synchronize
-
+    static boolean visualizeHeap = false;
     //=============================
 
     //===========Applet boot, static field setting============
@@ -30,8 +30,8 @@ public class Visualizer extends PApplet {
     public static void heapVisualize(int[] array) {
         Visualizer v = new Visualizer();
 
-        v.tree = parseHeapArrayToTree(array);
-        v.visualizeHeap = true;
+        tree = parseHeapArrayToTree(array);
+        visualizeHeap = true;
         arrayBuffer = new int[array.length];
         heapArray = array;
         System.arraycopy(array, 0, arrayBuffer, 0, array.length);
@@ -74,10 +74,8 @@ public class Visualizer extends PApplet {
         return t;
     }
 
-    public void setup() {
+    public void setup() {       // change to settings() if you are using processing 3 or above
         size(width, height);
-        frameRate(60);
-
     }
 
 

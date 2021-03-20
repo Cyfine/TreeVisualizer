@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="The Heap visualization implemented.">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_processing_core_2_2_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_processing_core_3_3_7.xml" beforeDir="false" />
+    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="Add ReadMe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tree.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tree.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Visualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,11 +22,6 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="master" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -57,7 +47,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Old/Processing/processing-2.2.1/core/library/core.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
@@ -66,18 +56,8 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Data_Structure_and_Algorithm\Tree" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Heap">
-    <configuration name="Heap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Heap" />
-      <module name="Tree" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Tree">
     <configuration name="Tree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Tree" />
       <module name="Tree" />
@@ -92,22 +72,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Heap" />
         <item itemvalue="Application.Tree" />
         <item itemvalue="Application.Visualizer" />
       </list>
@@ -139,11 +105,6 @@
       <workItem from="1615210555559" duration="1139000" />
       <workItem from="1615604978907" duration="3727000" />
       <workItem from="1615614324148" duration="676000" />
-      <workItem from="1616139045141" duration="6867000" />
-      <workItem from="1616153454098" duration="1937000" />
-      <workItem from="1616156330325" duration="123000" />
-      <workItem from="1616157286846" duration="4984000" />
-      <workItem from="1616163665484" duration="1638000" />
     </task>
     <task id="LOCAL-00001" summary="Add ReadMe">
       <created>1615608650336</created>
@@ -152,49 +113,7 @@
       <option name="project" value="LOCAL" />
       <updated>1615608650336</updated>
     </task>
-    <task id="LOCAL-00002" summary="Initially add support for the array implemented Heap">
-      <created>1616140511976</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1616140511976</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Initially add support for the array implemented Heap">
-      <created>1616142018349</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1616142018349</updated>
-    </task>
-    <task id="LOCAL-00004" summary="The Heap visualization implemented.">
-      <created>1616143024910</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1616143024910</updated>
-    </task>
-    <task id="LOCAL-00005" summary="The Heap visualization implemented.">
-      <created>1616144165221</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1616144165222</updated>
-    </task>
-    <task id="LOCAL-00006" summary="The Heap visualization implemented.">
-      <created>1616153612750</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1616153612750</updated>
-    </task>
-    <task id="LOCAL-00007" summary="The Heap visualization implemented.">
-      <created>1616157870289</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1616157870289</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,9 +133,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add ReadMe" />
-    <MESSAGE value="Initially add support for the array implemented Heap" />
-    <MESSAGE value="The Heap visualization implemented." />
-    <option name="LAST_COMMIT_MESSAGE" value="The Heap visualization implemented." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ReadMe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
