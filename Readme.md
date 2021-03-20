@@ -47,7 +47,7 @@ Tree t = new Tree();
 Visualizer.treeVisualize(t); 
 ```
 #### Visualize Tree with array implementation
-Like Heap data structure implemented using array, you can all the heapVisualize() method. The heapVisualize() method will parse  array into  Node Tree, and pass to the treeVisualizer.
+Like Heap data structure implemented using array, you can call the heapVisualize() method. The heapVisualize() method will parse  array into  Node Tree, and pass to the treeVisualizer.
 The only requirement is your array should stratify the format such that the first element(index 0) should store the count of elements stored in the array. The heapVisualize() only support integer data type.
 
 ```aidl
