@@ -396,7 +396,7 @@ public class Tree<E extends Comparable<E>> {
     }
 
 
-    private int updateHeight(Node n) {
+    public int updateHeight(Node n) {
 
         if (n == null) {
             return -1;

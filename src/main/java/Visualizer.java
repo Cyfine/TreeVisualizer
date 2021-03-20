@@ -16,6 +16,7 @@ public class Visualizer extends PApplet {
     static int[] heapArray;
     static int[] arrayBuffer; //used to check changes of heap and synchronize
     static boolean visualizeHeap = false;
+    static boolean invalidTree = false;
     //=============================
 
     //===========Applet boot, static field setting============
@@ -44,7 +45,7 @@ public class Visualizer extends PApplet {
             if (heapArray[i] != arrayBuffer[i]) {
                 tree = parseHeapArrayToTree(heapArray);
                 System.arraycopy(heapArray, 0, arrayBuffer, 0, heapArray.length);
-
+                System.out.println("Visualizer.heapSynchronize: Tree updated.");
             }
         }
     }
@@ -67,10 +68,13 @@ public class Visualizer extends PApplet {
         }
         try {
             t.root = nodes[1];
+            invalidTree = false ;
         } catch (RuntimeException e) {
-            System.out.println("Invalid Heap Array");
-            t.root = t.nodeBuilder(0);
+            System.out.println("Visualizer.parse: Invalid Heap Array");
+            invalidTree = true;
         }
+
+        t.updateHeight(t.root);
         return t;
     }
 
@@ -88,8 +92,16 @@ public class Visualizer extends PApplet {
         if (visualizeHeap) {
             heapSynchronize();
         }
+        if (!invalidTree) {
+            drawTree(tree);
+        }else{
+            background(0);
+            textSize(80);
+            text("No valid Tree exists", 10, height/2);
+            textSize(12.0f);
+        }
 
-        drawTree(tree);
+
         fill(0, 255, 0);
 
         if (mousePressed && mouseListener(x, y, 30)) {

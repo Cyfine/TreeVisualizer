@@ -1,4 +1,5 @@
 import java.util.Random;
+import java.util.Scanner;
 
 public class Heap {
     int[] keys;
@@ -28,16 +29,32 @@ public class Heap {
             sampleArray3[i] = rand.nextInt(1000);
         }
 
-        Heap test = buildHeap(sampleArray2);
+        Heap test = buildHeap(sampleArray);
         Visualizer.heapVisualize(test.keys);
-        System.out.println(depth(8));
+        Scanner in = new Scanner(System.in);
 
+        for(;;){
+            String cmd = in.nextLine();
+            switch(cmd){
+                case "del" :
+                    test.deleteMin();
+                    break ;
+                case "ins":
+                    System.out.println("Input insert value: ");
+                   int value = in.nextInt();
+                   if(
+                   !test.insert(value)){
+                       System.out.println("Insert failed!");
+                   }
+                   break ;
+            }
+        }
     }
 
 
     /**
      * @param key the key value insert into the heap
-     * @reuturn false if the heap is full or there is duplicate values in the heap
+     * @return false if the heap is full or there is duplicate values in the heap
      */
     public boolean insert(int key) {
         if (keys[0] == keys.length - 1 || find(key)) {
@@ -102,10 +119,13 @@ public class Heap {
     }
 
     public int deleteMin() {
+        if(keys[0] == 0){
+            throw new RuntimeException("Delete from empty Heap!");
+        }
         int result = keys[1];
         keys[1] = keys[keys[0]];
         keys[0]--;
-
+         System.out.println("size after deletion: "+ keys[0]);
         percolateDown(1);
 
 
@@ -144,7 +164,9 @@ public class Heap {
         return heap;
     }
 
-
+    /**
+     *  method to get the depth of Node by index
+     * */
     public static int depth(int index) {
         double logarithmDepth = Math.log(index + 1) / Math.log(2) - 1;
         if (Math.ceil(logarithmDepth) == Math.floor(logarithmDepth)) {
