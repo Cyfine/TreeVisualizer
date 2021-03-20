@@ -148,6 +148,9 @@ public class Tree<E extends Comparable<E>> {
         t.printPreorder();
     }
 
+    public  Node nodeBuilder(E obj){
+        return new Node(obj);
+    }
 
     /**
      * @return 1 , node on parent left, 0 on parent right, -1 no parent
@@ -163,9 +166,8 @@ public class Tree<E extends Comparable<E>> {
         }
     }
 
-    /**
-     *
-     */
+
+
     public boolean zigZigZagZag(E key) {
         int[] situation = new int[2];
         Node target = find(key);
