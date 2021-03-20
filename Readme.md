@@ -1,6 +1,6 @@
 # Tree Visualizer
 
-![size](https://img.shields.io/github/size/Cyfine/TreeVisualizer/src/main/java/Visualizer.java)
+[![size](https://img.shields.io/github/size/Cyfine/TreeVisualizer/src/main/java/Visualizer.java)](https://github.com/Cyfine/TreeVisualizer/tree/master/src/main/java)
 [![Build Tool](https://img.shields.io/badge/Build%20Tool-Maven-orange)](https://maven.apache.org/)
 [![Dependencies](https://img.shields.io/badge/Dependencies-Processing-lightgrey)](https://processing.org/)
 
