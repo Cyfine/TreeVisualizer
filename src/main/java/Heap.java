@@ -1,3 +1,17 @@
+/*
+ * Advertisement:
+ * New Feature!
+ * The new feature added to the Tree visualizer. It can visualizer array implemented binary tree.
+ * See on my GitHub: https://github.com/Cyfine/TreeVisualizer
+ * Leave a star give a little support if you like!
+ *
+ * Readme:
+ *  If the deleteMin from an empty Heap, a Runtime exception will be thrown
+ *
+ *
+ *
+ * */
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -20,7 +34,7 @@ public class Heap {
         int size = heap.keys[0];
 
 
-        int[] sampleArray = {8, 5, 9, 2, 6, 7, 4, 1, 0};
+        int[] sampleArray = {8, 5, 9, 2, 6, 7, 4, 1, 0}; // eight elements in total: 1 2 4 5 6 7 8 9
         int[] sampleArray2 = {5, 6, 9, 4, 3, 50, 54, 12, 76, 90, 22, 90, 67};
         int[] sampleArray3 = new int[1000];
         Random rand = new Random();
@@ -30,23 +44,23 @@ public class Heap {
         }
 
         Heap test = buildHeap(sampleArray);
-        Visualizer.heapVisualize(test.keys);
         Scanner in = new Scanner(System.in);
 
-        for(;;){
+        //CLI heap test program:
+        for (; ; ) {
+            System.out.println("Input command: ");
             String cmd = in.nextLine();
-            switch(cmd){
-                case "del" :
-                    test.deleteMin();
-                    break ;
+            switch (cmd) {
+                case "del":
+                    System.out.println("Deleted value:" + test.deleteMin());
+                    break;
                 case "ins":
                     System.out.println("Input insert value: ");
-                   int value = in.nextInt();
-                   if(
-                   !test.insert(value)){
-                       System.out.println("Insert failed!");
-                   }
-                   break ;
+                    int value = in.nextInt();
+                    if (!test.insert(value)) {
+                        System.out.println("Insert failed!\n");
+                    }
+                    break;
             }
         }
     }
@@ -99,9 +113,13 @@ public class Heap {
 
         }
 
+
+        // If the Node has two children, it will compare the size of its two children, and choose the index of the smaller child
         if (dualChild && keys[childIdx] > keys[childIdx + 1]) {
             childIdx = childIdx + 1;
         }
+
+        //compare the value of the smaller child with its paret
         if (keys[childIdx] < keys[idx]) {
             int temp = keys[idx];
             keys[idx] = keys[childIdx];
@@ -119,13 +137,13 @@ public class Heap {
     }
 
     public int deleteMin() {
-        if(keys[0] == 0){
+        if (keys[0] == 0) {
             throw new RuntimeException("Delete from empty Heap!");
         }
         int result = keys[1];
         keys[1] = keys[keys[0]];
         keys[0]--;
-         System.out.println("size after deletion: "+ keys[0]);
+        // System.out.println("size after deletion: "+ keys[0]);
         percolateDown(1);
 
 
@@ -144,9 +162,9 @@ public class Heap {
     }
 
     /*
-    * Build build heap algorithm,
-    *
-    * */
+     * Build build heap algorithm, percolate down from from the [size/2] element,
+     * the percolateDown method can adjust the heap recursively.
+     * */
     public static Heap buildHeap(int[] data) {
         Heap heap = new Heap();
         int currentPos = data[0];
@@ -165,8 +183,8 @@ public class Heap {
     }
 
     /**
-     *  method to get the depth of Node by index
-     * */
+     * method to get the depth of Node by index
+     */
     public static int depth(int index) {
         double logarithmDepth = Math.log(index + 1) / Math.log(2) - 1;
         if (Math.ceil(logarithmDepth) == Math.floor(logarithmDepth)) {

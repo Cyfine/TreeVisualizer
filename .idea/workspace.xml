@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="update Readme.md">
+    <list default="true" id="35fa4492-e850-432d-ba3e-270de4c5d762" name="Default Changelist" comment="update exception handling">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Heap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Heap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Visualizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Visualizer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +78,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,7 +125,11 @@
       <workItem from="1615210555559" duration="1139000" />
       <workItem from="1615604978907" duration="3727000" />
       <workItem from="1615614324148" duration="676000" />
-      <workItem from="1616230602360" duration="4541000" />
+      <workItem from="1616230602360" duration="4912000" />
+      <workItem from="1616236322231" duration="53000" />
+      <workItem from="1616236504738" duration="1767000" />
+      <workItem from="1616239923569" duration="659000" />
+      <workItem from="1616308207341" duration="620000" />
     </task>
     <task id="LOCAL-00001" summary="Add ReadMe">
       <created>1615608650336</created>
@@ -162,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616226544425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update exception handling">
+      <created>1616235226368</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616235226368</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,7 +195,8 @@
     <MESSAGE value="Add ReadMe" />
     <MESSAGE value="Bug fixes and update Readme.md" />
     <MESSAGE value="update Readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Readme.md" />
+    <MESSAGE value="update exception handling" />
+    <option name="LAST_COMMIT_MESSAGE" value="update exception handling" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
