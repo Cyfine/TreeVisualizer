@@ -15,7 +15,7 @@ The Node class used by your tree should be exactly the same as the one in the Tr
 The visualizer depends on Processing.core, add Processing.core to your build path manually or using Maven to build
 
 If you are using Maven, add following to pom.xml
-```
+```xml
   <dependencies>
     <dependency>
         <groupId>org.processing</groupId>
@@ -25,7 +25,7 @@ If you are using Maven, add following to pom.xml
   </dependencies>
 ```
 The version of processing used is Processing 2.2.1. If you are using processing 3 or above, in the Visualizer class, you should change the setup() method name to settings() like following.
-```
+```java
 public void settings() {
         size(width, height);
     }
