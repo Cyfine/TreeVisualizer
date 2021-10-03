@@ -1,9 +1,9 @@
 /*
-In the current stage, the heapVisualizer only support heap array with int data type.
-The support of heap is implemented creating a compatible layer on the Tree visualizer.
+In the current stage, the heapVisualizer only supports heap array with the int data type.
+The support of heap is implemented by creating a compatible layer on the Tree visualizer.
 It will first parse the Heap array to a Node implemented Tree, and pass the Tree to the visualizer
-A Synchornize method will keep traking on the change of the array, once there is any changes on the heap, it will reparse the array to a new tree
-to real-time visualize the int array
+A Synchronize method will keep tracking on the change of the array, once there are any changes on the heap, 
+it will reparse the array to a new tree to real-time visualize the int array
 */
 
 import processing.core.PApplet;
